@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Schedule_TestActivity" />
-        <activity android:name=".Depression_TestActivity"></activity>
+        <activity android:name=".Depression_TestActivity" />
+        <activity android:name=".CausesActivity"></activity>
     </application>
 
 </manifest>
