@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
         check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(MainActivity.this,Schedule_TestActivity.class);
+                Intent i=new Intent(MainActivity.this,Depression_TestActivity.class);
                 startActivity(i);
             }
         });

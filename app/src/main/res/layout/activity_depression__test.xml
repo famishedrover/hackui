@@ -19,243 +19,231 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text1"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered by feeling down, depressed, irritable, or hopeless over the last two weeks?"/>
-        <RadioButton
+        android:text="How often have you been bothered by feeling nervous, anxious or on edge over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg1">
+    <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text1_radio1"
+            android:id="@+id/text1_radio0"
             android:text="Not At All"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text1_radio2"
+            android:id="@+id/text1_radio1"
             android:text="Several Days"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text1_radio3"
+            android:id="@+id/text1_radio2"
             android:text="More Than Half The Days"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text1_radio4"
+            android:id="@+id/text1_radio3"
             android:text="Nearly Everyday"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dep_text2"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered that you have little interest or pleasure in doing things over the last two weeks?"/>
+        android:text="How often have you been bothered by not being able to stop or control worrying over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg2">
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text2_radio1"
+        android:id="@+id/text2_radio0"
         android:text="Not At All"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text2_radio2"
+        android:id="@+id/text2_radio1"
         android:text="Several Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text2_radio3"
+        android:id="@+id/text2_radio2"
         android:text="More Than Half The Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text2_radio4"
+        android:id="@+id/text2_radio3"
         android:text="Nearly Everyday"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dep_text3"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered by trouble falling asleep, staying asleep, or sleeping too much over the last two weeks?"/>
+        android:text="How often have you been bothered by worrying too much about different things over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg3">
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text3_radio1"
+        android:id="@+id/text3_radio0"
         android:text="Not At All"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text3_radio2"
+        android:id="@+id/text3_radio1"
         android:text="Several Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text3_radio3"
+        android:id="@+id/text3_radio2"
         android:text="More Than Half The Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text3_radio4"
+        android:id="@+id/text3_radio3"
         android:text="Nearly Everyday"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dep_text4"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered that you have poor appetite, weight loss, or overeating over the last two weeks?"/>
+        android:text="How often have you been bothered by having trouble relaxing over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg4">
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text4_radio1"
+        android:id="@+id/text4_radio0"
         android:text="Not At All"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text4_radio2"
+        android:id="@+id/text4_radio1"
         android:text="Several Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text4_radio3"
+        android:id="@+id/text4_radio2"
         android:text="More Than Half The Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text4_radio4"
+        android:id="@+id/text4_radio3"
         android:text="Nearly Everyday"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dep_text5"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered by feeling tired, or having little energy over the last two weeks?"/>
+        android:text="How often have you been bothered by being so restless that it is hard to sit still over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg5">
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text5_radio1"
+        android:id="@+id/text5_radio0"
         android:text="Not At All"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text5_radio2"
+        android:id="@+id/text5_radio1"
         android:text="Several Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text5_radio3"
+        android:id="@+id/text5_radio2"
         android:text="More Than Half The Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text5_radio4"
+        android:id="@+id/text5_radio3"
         android:text="Nearly Everyday"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dep_text6"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered by feeling bad about yourself – or feeling that you are a failure, or that you have let yourself or your family down over the last two weeks?"/>
+        android:text="How often have you been bothered by becoming easily annoyed or irritable over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg6">
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text6_radio1"
+        android:id="@+id/text6_radio0"
         android:text="Not At All"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text6_radio2"
+        android:id="@+id/text6_radio1"
         android:text="Several Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text6_radio3"
+        android:id="@+id/text6_radio2"
         android:text="More Than Half The Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text6_radio4"
+        android:id="@+id/text6_radio3"
         android:text="Nearly Everyday"/>
+    </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dep_text7"
         android:paddingTop="16dp"
-        android:text="How often have you been bothered that you have trouble concentrating on things like school work, reading, or watching TV over the last two weeks?"/>
+        android:text="How often have you been bothered by feeling afraid as if something awful might happen over the last two weeks?"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg7">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text7_radio0"
+        android:text="Not At All"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text7_radio1"
-        android:text="Not At All"/>
+        android:text="Several Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text7_radio2"
-        android:text="Several Days"/>
+        android:text="More Than Half The Days"/>
     <RadioButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text7_radio3"
-        android:text="More Than Half The Days"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text7_radio4"
         android:text="Nearly Everyday"/>
+    </RadioGroup>
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/dep_text8"
-        android:paddingTop="16dp"
-        android:text="How often have you been bothered by moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you were moving around a lot more than usual over the last two weeks?"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text8_radio1"
-        android:text="Not At All"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text8_radio2"
-        android:text="Several Days"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text8_radio3"
-        android:text="More Than Half The Days"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text8_radio4"
-        android:text="Nearly Everyday"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/dep_text9"
-        android:paddingTop="16dp"
-        android:text="How often have you been bothered by thoughts that you would be better off dead, or of hurting yourself in some way over the last two weeks?"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text9_radio1"
-        android:text="Not At All"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text9_radio2"
-        android:text="Several Days"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text9_radio3"
-        android:text="More Than Half The Days"/>
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text9_radio4"
-        android:text="Nearly Everyday"/>
+        android:text="Submit"
+        android:id="@+id/dep_button"
+        android:layout_gravity="right"/>
 
 </LinearLayout>
 </ScrollView>
