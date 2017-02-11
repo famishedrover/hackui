@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_contact) {
 
         } else if (id == R.id.nav_cause) {
             Intent intent=new Intent(MainActivity.this ,CausesActivity.class);
