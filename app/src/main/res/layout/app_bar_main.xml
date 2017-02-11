@@ -33,6 +33,7 @@
         app:horizontalMargin="30dp"
         app:verticalMargin="30dp"
         app:fadeInFraction="0.2"
+
         app:fabId="@+id/fabtoolbar_fab"
         app:containerId="@+id/fabtoolbar_container"
         app:fabToolbarId="@+id/fabtoolbar_toolbar">
