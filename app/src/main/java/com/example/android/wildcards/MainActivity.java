@@ -124,7 +124,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onStateChanged(View bottomSheet, int newState) {
                 if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
-                    mBottomSheetBehavior.setPeekHeight(300);
+                    mBottomSheetBehavior.setPeekHeight(0);
+
                 }
             }
 
@@ -136,7 +137,7 @@ public class MainActivity extends AppCompatActivity
         mtitle=(TextView)findViewById(R.id.title)  ;
         mcontent=(TextView)findViewById(R.id.content) ;
         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-        mBottomSheetBehavior.setPeekHeight(300);
+        mBottomSheetBehavior.setPeekHeight(190);
         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
 
 
@@ -154,8 +155,7 @@ public class MainActivity extends AppCompatActivity
                     String t=e.getTitle() ;
 
                     mtitle.setText(t+"");
-                    mcontent.setText(Html.from
-                            Html(c)+" ");
+                    mcontent.setText(Html.fromHtml(c)+" ");
 
                 }
                 else {

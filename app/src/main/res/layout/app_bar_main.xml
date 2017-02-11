@@ -30,8 +30,8 @@
         android:layout_height="match_parent"
         app:showDuration="600"
         app:hideDuration="200"
-        app:horizontalMargin="30dp"
-        app:verticalMargin="30dp"
+        app:horizontalMargin="40dp"
+        app:verticalMargin="65dp"
         app:fadeInFraction="0.2"
 
         app:fabId="@+id/fabtoolbar_fab"
@@ -99,7 +99,7 @@
                 android:layout_height="match_parent"
 
                 android:text="QUOTE OF THE DAY"
-                android:padding="16dp"
+                android:paddingLeft="16dp"
                 android:textAppearance="@color/red"
 
                 android:textSize="18sp"/>
@@ -116,7 +116,7 @@
                 android:layout_height="match_parent"
                 android:text="lol"
                 android:id="@+id/content"
-                android:padding="16dp"
+                android:paddingLeft="16dp"
                 android:textSize="16sp"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
