@@ -60,9 +60,6 @@ public class Schedule_TestActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
-                Intent i=new Intent(Schedule_TestActivity.this,ImprovementActivity.class);
-                startActivity(i);
             }
         });
 
@@ -128,7 +125,9 @@ public class Schedule_TestActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 Log.e(LOG_TAG, "Problem parsing the earthquake JSON results", e);
             }
-            Log.e("GOYAL", result); // this is expecting a response code to be sent from your server upon receiving the POST data
+            Log.v("GOYAL", mfreetime);
+            Intent i=new Intent(Schedule_TestActivity.this,ImprovementActivity.class);
+            startActivity(i);// this is expecting a response code to be sent from your server upon receiving the POST data
         }
     }
 }

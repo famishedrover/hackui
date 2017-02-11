@@ -55,7 +55,15 @@ public class ImprovementActivity extends AppCompatActivity {
         TextView freeTextView = (TextView) findViewById(R.id.res_text3);
         freeTextView.setText(response);
 
-        setString(mholperyear);
+        if(mholperyear.contains("-")){
+            response=mholperyear.substring(1)+" Times Less";
+        }
+        else if(mholperyear.matches("0")){
+            response="Hurray!!! No Improvement Needed";
+        }
+        else{
+            response=mholperyear+" Times More";
+        }
         TextView holTextView = (TextView) findViewById(R.id.res_text4);
         holTextView.setText(response);
         //}
