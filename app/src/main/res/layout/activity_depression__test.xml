@@ -19,6 +19,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text1"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by feeling nervous, anxious or on edge over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -51,6 +54,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text2"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by not being able to stop or control worrying over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -83,6 +89,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text3"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by worrying too much about different things over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -115,6 +124,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text4"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by having trouble relaxing over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -147,6 +159,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text5"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by being so restless that it is hard to sit still over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -179,6 +194,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text6"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by becoming easily annoyed or irritable over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"
@@ -211,6 +229,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/dep_text7"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
         android:text="How often have you been bothered by feeling afraid as if something awful might happen over the last two weeks?"/>
     <RadioGroup
         android:layout_width="match_parent"

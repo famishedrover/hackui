@@ -14,6 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text_view1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="22sp"
         android:layout_marginTop="16dp"
         android:text="Sleeping Hours"/>
     <EditText
@@ -26,6 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text_view2"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="22sp"
         android:layout_marginTop="16dp"
         android:text="Working Hours"/>
     <EditText
@@ -39,6 +45,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/text_view3"
         android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="22sp"
         android:text="Free Time"/>
     <EditText
         android:layout_width="match_parent"
@@ -51,12 +60,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/text_view4"
         android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="22sp"
         android:text="Holidays Per Year"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edit_view4"
-        android:hint="estimate hrs"/>
+        android:hint="estimate no of times"/>
 
     <Button
         android:layout_width="wrap_content"

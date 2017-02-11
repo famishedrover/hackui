@@ -28,6 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
         android:text="Optimized Sleeping Hours"/>
     <TextView
         android:layout_width="match_parent"
@@ -38,6 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
         android:text="Optimized Working Hours"/>
     <TextView
         android:layout_width="match_parent"
@@ -48,6 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
         android:text="Optimized Free Time"/>
     <TextView
         android:layout_width="match_parent"
@@ -58,6 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
         android:text="Optimized Holidays Per Year"/>
     <TextView
         android:layout_width="match_parent"
