@@ -49,7 +49,7 @@ public class Schedule_TestActivity extends AppCompatActivity {
                     jObj.put("Working Hours",  edittext6.getText().toString());
 
                     jArr.put(jObj);
-                    new Schedule_TestActivity.SendDeviceDetails().execute("http://52.88.194.67:8080/IOTProjectServer/registerDevice", jObj.toString());
+                    new Schedule_TestActivity.SendDeviceDetails().execute("https://dtuwildcards.herokuapp.com/app/website/", jObj.toString());
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
