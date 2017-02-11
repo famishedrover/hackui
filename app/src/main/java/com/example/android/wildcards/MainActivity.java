@@ -1,13 +1,16 @@
 package com.example.android.wildcards;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -20,22 +23,40 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+import static android.R.id.progress;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private FABToolbarLayout layout;
     private static final int REQUEST_CALL = 1;
     TextView one ;
+    TextView mtitle , mcontent ;
+    private ProgressDialog progress;
     final String str2="100";
+    View bottomSheet ;
+    private BottomSheetBehavior mBottomSheetBehavior;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        progress = new ProgressDialog(this);
+        progress.setMessage("Loading");
+        progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        progress.setIndeterminate(true);
+        progress.setProgress(0);
+        progress.show();
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,10 +111,67 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this,Depression_TestActivity.class);
+
                 startActivity(i);
             }
         });
+
+
+
+        bottomSheet = findViewById( R.id.bottom_sheet );
+        mBottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
+        mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+            @Override
+            public void onStateChanged(View bottomSheet, int newState) {
+                if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
+                    mBottomSheetBehavior.setPeekHeight(300);
+                }
+            }
+
+            @Override
+            public void onSlide(View bottomSheet, float slideOffset) {
+            }
+        });
+
+        mtitle=(TextView)findViewById(R.id.title)  ;
+        mcontent=(TextView)findViewById(R.id.content) ;
+        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+        mBottomSheetBehavior.setPeekHeight(300);
+        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+
+
+        CNAPIInterface apiService = Client.getService();
+        Call<ArrayList<EventResponse>> call = apiService.getEvents();
+        call.enqueue(new Callback<ArrayList<EventResponse>>() {
+
+
+            @Override
+            public void onResponse(Call<ArrayList<EventResponse>> call, Response<ArrayList<EventResponse>> response) {
+                if (response.isSuccessful()) {
+                    progress.dismiss();
+                    EventResponse e = response.body().get(0);
+                    String c=e.getContent() ;
+                    String t=e.getTitle() ;
+
+                    mtitle.setText(t+"");
+                    mcontent.setText(Html.from
+                            Html(c)+" ");
+
+                }
+                else {
+                    progress.dismiss();
+                    //Snackbar.make(navigationView, "Weak/No Internet Connection", Snackbar.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<EventResponse>> call, Throwable t) {
+                progress.dismiss();
+                Toast.makeText(MainActivity.this , "Weak/No Internet Connection :/" , Toast.LENGTH_LONG).show();
+            }
+        });
     }
+
 
     @Override
     public void onBackPressed() {
