@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
     TextView one ;
     TextView mtitle , mcontent ;
     private ProgressDialog progress;
-    final String str2="100";
+    final String str2="102";
     View bottomSheet ;
     private BottomSheetBehavior mBottomSheetBehavior;
     @Override
@@ -212,11 +212,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_contact) {
+       if (id == R.id.nav_contact) {
 
         } else if (id == R.id.nav_cause) {
             Intent intent=new Intent(MainActivity.this ,CausesActivity.class);
